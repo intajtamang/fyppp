@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="static/login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">
+        <h1>Welcome to<span> HelmGuard</span></h1>
+        <p>A helmet detection and number plate recognition site</p>
+      </div>
+      <div class="image">
+        <img src="static/images/Illustration.png" alt="image" />
+      </div>
+      <div class="container1">
+        <form action="/index" id="loginForm">
+          <h1>Log-In</h1>
+          <div class="input-field">
+            <input
+              type="text"
+              id="uname"
+              value=""
+              placeholder="Username"
+              autocomplete="off"
+              required
+            />
+            <p id="uname-error"></p>
+          </div>
+          <div class="input-field">
+            <input
+              type="password"
+              id="password"
+              value=""
+              placeholder="Password"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="forget-password">
+            <input type="checkbox" id="remember" />
+            <h4>Remember me</h4>
+            <a href="/forget_password">Forgot Password?</a>
+          </div>
+          <div class="login-btn">
+            <button type="submit">LOGIN</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var form = document.getElementById("loginForm");
+
+        form.addEventListener("submit", function (event) {
+          var username = document.getElementById("uname").value;
+          var password = document.getElementById("password").value;
+          var alphabetonly = /^[a-zA-Z]+$/;
+
+          if (
+            alphabetonly.test(username) &&
+            username.toLowerCase() == "admin" &&
+            password == "admin"
+          ) {
+            form.submit();
+          } else {
+            alert("Invalid username or password. Please try again.");
+            event.preventDefault(); // Preventing the default form submission
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

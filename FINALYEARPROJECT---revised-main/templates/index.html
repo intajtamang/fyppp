@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="navigations">
+      <h1>HelmGuard</h1>
+      <a href="#">
+        <i class="bx bxs-user" id="user-icon"><span>admin</span></i>
+      </a>
+    </div>
+    <div class="mainmenu">
+      <h1>MainMenu</h1>
+      <div class="menu-icons">
+        <button onclick="showHome()">
+          <i class="bx bx-home" id="home"><span>Home</span></i>
+        </button>
+        <button onclick="showViolationLog()">
+          <i class="bx bx-notepad" id="violation"><span>Violation log</span></i>
+        </button>
+        <a href="/register"
+          ><i class="bx bx-user-plus" id="register"><span>Register</span></i></a
+        >
+        <a href="/login"
+          ><i class="bx bx-log-in" id="login"><span>Login</span></i></a
+        >
+      </div>
+    </div>
+    <div class="main_container">
+      <div id="mainContainer">
+        <div class="welcome-message">
+          <h2>Welcome to HelmGuard</h2>
+          <p>Please register or login to access the system.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

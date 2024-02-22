@@ -1,0 +1,323 @@
+*{
+    font-family: sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navigations{
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    border: 1px solid rgb(208, 207, 207);
+}
+
+.navigations h1{
+    color: rgb(36, 163, 36);
+    margin-left: 50px;
+    font-size: 25px;
+    position: absolute;
+    top: 0;
+}
+
+.navigations #user-icon{
+    color: rgb(80, 72, 72);
+    font-size: 25px;
+    position: absolute;
+    right: 150;
+    top: 20;
+}
+
+#user-icon span{
+    color: rgb(122, 129, 134);
+    font-size: 20px;
+    position: relative;
+    top: -3;
+    left: 5;
+}
+
+.mainmenu{
+    background-color: rgb(222, 225, 225);
+    width: 15%;
+    height: 106.5vh;
+    position: absolute;
+}
+
+.mainmenu h1{
+    color: rgb(56, 103, 105);
+    font-size: 20px;
+    margin-left: 40px;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.menu-icons{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    font-size: 20px;
+    margin-left: 30px;
+    gap: 30px;
+    font-weight: bolder;
+}
+
+.menu-icons i{
+    color: rgb(57, 80, 102);
+}
+
+.menu-icons span{
+    color: rgb(26, 65, 90);
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 5px;
+    position: relative;
+    top: -2;
+}
+
+.menu-icons button{
+    border: none;
+    background-color: initial;
+    cursor: pointer;
+}
+
+#logout{
+    position: absolute;
+    bottom: 30;
+}
+
+.main_container{
+    width: 84.56%;
+    height: 106.5vh;
+    margin: auto;
+    background-color:rgba(219, 218, 228, 0.66);
+    position: absolute;
+    left: 15%;
+}
+
+#video{
+    width: 99.65%;
+    height: 65vh;
+    margin: 0px 0px 20px 8px;
+}
+
+.images_container{
+    width: 99.4%;
+    height: 40vh;
+    position: relative;
+    top: -10;
+    margin-left: 8px;
+    background-color: rgb(145, 203, 222);
+}
+
+#imagesContainer ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+#imagesContainer li {
+    margin: 15px 0px 0px 50px;
+    display: flex;  
+    flex-direction: row;
+}
+
+#imagesContainer img { 
+    width: 240px;
+    height: 90px; 
+    cursor: pointer;
+    border: 1px solid white; 
+    
+}
+
+.img_header{
+    position: relative;
+    top: 5;
+    left: 50%; 
+    transform: translate(-50%);
+}
+
+.img_header h2{
+    color: rgb(60, 33, 33);
+    text-align: center;
+    font-weight: lighter;
+    font-size: 20px;
+}
+
+.img_header p{
+    position: relative;
+    top: -5;
+    color: rgb(103, 61, 61);;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+  .popup-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    width: 30%;
+    height: auto;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .close {
+    color: #ede5e5;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    position: relative;
+    right: -20;
+    top: -20;
+    border: 1px solid red;
+    background-color: red;
+    width: 10%;
+    text-align: center;
+  }
+  
+  .close:hover,
+  .close:focus {
+    background-color: rgb(231, 28, 28);
+    border: 1px solid rgb(231, 28, 28);
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+.input_plate{
+    padding: 12px;
+    outline: none;
+    width: 100%;
+    height: 50px;
+}  
+  
+.popup_button{
+    background-color: rgb(59, 174, 219);
+
+    cursor: pointer;
+    margin-top: 25px;
+    height: 50px;
+    width:100%;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+}  
+
+.popup_button:hover{
+    background-color: rgb(36, 159, 208);
+}
+
+#plateInput::placeholder{
+    color: red;
+    font-size: 16px;
+}
+
+#messageContainer {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 30px;
+    width: auto;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: none;
+    z-index: 9999;
+}
+
+#messageText {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+}
+
+.listbox_container{
+    width: 40%;
+    height: 100vh;
+    background-color: rgb(181, 183, 189);
+    position: relative;
+    top:0;
+    left: 35%;
+}
+
+.date-contains{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    height: 60px;
+}
+
+.date_picker label{
+    color: rgb(58, 44, 44);
+    margin-top: -10px;
+    font-weight: bold;
+    position: relative;
+    left: -45;
+    font-size: 15px;
+}
+
+.date_picker input{
+    color: rgb(66, 57, 57);
+    width: 50%;
+    padding: 5px;
+    margin-left: -30px;
+    margin-top: -10px;
+}
+
+.table-head{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid grey;
+}
+
+.table-head h3{
+    color: rgb(91, 53, 53);
+    font-size: 15px;
+}
+
+.ptag-btn{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.ptag-btn p{
+    margin-top: 0px;
+    padding-top: 12px;
+    color: white;
+    font-size: 15px;
+}
+
+.ptag-btn button{
+    float: right;
+    margin-right: 0px;
+    color: white;
+    background-color: #30b4db;
+    border: none;
+    width: 15%;
+    height: 25px;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+.ptag-btn button:hover{
+    background-color: #25a0c5;
+}
